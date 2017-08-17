@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Biokod</string>
+    <string name="login">Log in</string>
+    <string name="something_went_wrong">Something went wrong, :(</string>
+</resources>
