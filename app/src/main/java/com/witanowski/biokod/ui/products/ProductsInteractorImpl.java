@@ -1,12 +1,9 @@
 package com.witanowski.biokod.ui.products;
 
-import android.util.Log;
-
 import com.witanowski.biokod.data.model.Product;
 import com.witanowski.biokod.data.model.ProductParams;
 import com.witanowski.biokod.data.remote.APIService;
 import com.witanowski.biokod.data.remote.APIUtils;
-import com.witanowski.biokod.ui.products.adapter.ProductAdapter;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -19,7 +16,6 @@ import retrofit2.Response;
 public class ProductsInteractorImpl implements ProductsInteractor {
     @Override
     public void getProducts(final OnGetProductsFinishedListener listener) {
-        Log.d("testtest", "zxc");
         Product product = new Product("12345", "2.0", new ProductParams(), "products_list");
 
         APIService service = APIUtils.getAPIService();
